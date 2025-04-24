@@ -1,4 +1,4 @@
-#  Lipsticks Shop
+#  Ecommerce-site
 A simple frontend project for a lipstick store built using **React**, **TypeScript**, and **Vite**.  
 This project is a practice setup with TypeScript, ESLint rules, and Vite for fast development.
 
