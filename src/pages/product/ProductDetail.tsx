@@ -18,6 +18,7 @@ import { Separator } from "@/components/ui/separator";
 import { formatPrice } from "@/lib/utils";
 import Rating from "@/components/products/Rating";
 import AddToFavourite from "@/components/products/AddToFavourite";
+import AddToCardForm from "@/components/products/AddToCardForm";
 
 
 function ProductDetail() {
@@ -34,6 +35,7 @@ function ProductDetail() {
           All Products
         </Link>
       </Button>
+
       <section className=" flex flex-col gap-8 md:flex-row md:gap-16">
         <Carousel
           plugins={[plugin.current]}
@@ -73,6 +75,11 @@ function ProductDetail() {
             < Rating rating={Number(product?.rating)} />
             <AddToFavourite productId={String(product?.id)} rating={Number(product?.rating)} />
           </div>
+
+
+
+          <AddToCardForm showBuyNow={product?.status === "active"} />
+
 
 
         </div>
