@@ -13,6 +13,9 @@ import ProductDetail from "@/pages/product/ProductDetail";
 
 //for lazy loading page //for initial pageကိုမြန်အောင်lazy loading လုပ်လို့ရ
 import { lazy, Suspense } from "react";
+import Login from "@/pages/auth/Login";
+import Register from "@/pages/auth/Register";
+
 const BlogRootLayout = lazy(() => import("@/pages/product/ProductRootLayout"));
 const Blog = lazy(() => import("@/pages/blog/Blog"));
 const BlogDetail = lazy(() => import("@/pages/blog/BlogDetail"));
@@ -64,4 +67,17 @@ export const router = createBrowserRouter([
       },
     ],
   },
+
+
+  {
+    path: "/Login",
+    element: <Login />
+
+  },
+  {
+    path: "/Register",
+    element: <Register />
+
+  },
+
 ]);

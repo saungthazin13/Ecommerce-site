@@ -6,6 +6,12 @@ import ProductCard from "@/components/products/ProductCard";
 import { icons } from "@/components/icons";
 import Autoplay from "embla-carousel-autoplay"
 import React from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 
 import {
@@ -69,7 +75,7 @@ function ProductDetail() {
             <p className=" text-base text-muted-foreground">{formatPrice(Number(product?.price))}</p>
           </div>
 
-          <Separator className=" " />
+          <Separator className="  my-1.5" />
           <p className="text-base text-muted-foreground">{product?.inventory} in stock</p>
           <div className=" flex items-center justify-between">
             < Rating rating={Number(product?.rating)} />
@@ -79,12 +85,20 @@ function ProductDetail() {
 
 
           <AddToCardForm showBuyNow={product?.status === "active"} />
+          <Separator className="  my-5" />
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1" className=" border-none">
+              <AccordionTrigger>Description</AccordionTrigger>
+              <AccordionContent>
+                {product?.description ?? "No description is available for this product"}
+              </AccordionContent>
+            </AccordionItem>
 
+          </Accordion>
 
 
         </div>
         <Separator className=" mt-4 md:hidden" />
-
       </section>
 
       <section className="space-y-6 overflow-hidden">
@@ -105,6 +119,9 @@ function ProductDetail() {
           <ScrollBar orientation="horizontal" />
         </ScrollArea>
       </section>
+
+
+
 
     </div>
   );

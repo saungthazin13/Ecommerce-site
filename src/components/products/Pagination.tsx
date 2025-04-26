@@ -1,4 +1,3 @@
-// Pagination;
 import {
   Pagination,
   PaginationContent,
@@ -7,11 +6,11 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from "@/components/ui/pagination"
+} from "@/components/ui/pagination";
 
 export default function PaginationButtom() {
   return (
-    <Pagination className=" mb-8">
+    <Pagination className="mb-8">
       <PaginationContent>
         <PaginationItem>
           <PaginationPrevious href="#" />
@@ -35,6 +34,5 @@ export default function PaginationButtom() {
         </PaginationItem>
       </PaginationContent>
     </Pagination>
-  )
+  );
 }
-
