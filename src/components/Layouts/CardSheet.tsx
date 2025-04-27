@@ -49,7 +49,7 @@ export default function CardSheet() {
             <ScrollArea className="my-4 h-[60vh] pb-8">
               <div className="flex-1">
                 {cartItems.map((cart) => (
-                  <CartItem />
+                  <CartItem cart={cart} />
                 ))}
               </div>
             </ScrollArea>

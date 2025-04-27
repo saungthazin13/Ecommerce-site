@@ -12,6 +12,14 @@ import {
   DashboardIcon,
   GearIcon,
   ExitIcon,
+  TrashIcon,
+  TargetIcon,
+  RocketIcon,
+  GlobeIcon,
+  PersonIcon,
+  ChatBubbleIcon,
+  ReloadIcon,
+  LockClosedIcon,
 } from "@radix-ui/react-icons";
 
 import React from "react";
@@ -64,4 +72,12 @@ export const icons = {
   dashboard: DashboardIcon,
   gear: GearIcon,
   exit: ExitIcon,
+  trash: TrashIcon,
+  target: TargetIcon,
+  rocket: RocketIcon,
+  globle: GlobeIcon,
+  people: PersonIcon,
+  chat: ChatBubbleIcon,
+  load: ReloadIcon,
+  lock: LockClosedIcon,
 };
