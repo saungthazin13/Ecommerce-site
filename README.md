@@ -7,7 +7,7 @@
  1. Clone the Repository
  ```bash
 git clone https://github.com/saungthazin13/Ecommerce-site.git
-cd Lipstickshop
+cd Ecommerce-site
 
 2. Install Dependencies
 npm install
