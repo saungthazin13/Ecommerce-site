@@ -11,3 +11,16 @@
     }
   }
 }
+
+{
+  "compilerOptions": {
+    ...
+    "skipLibCheck": true,
+    "noEmit": true,
+    "isolatedModules": false,
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  }
+}
+
