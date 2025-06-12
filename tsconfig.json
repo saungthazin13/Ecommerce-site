@@ -1,26 +1,17 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ],
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
-}
-
-{
-  "compilerOptions": {
-    ...
     "skipLibCheck": true,
     "noEmit": true,
     "isolatedModules": false,
     "strict": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false
-  }
+  },
+  "include": ["src"]
 }
+
+
+
+
 
